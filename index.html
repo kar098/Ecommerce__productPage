@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>E-commerce product page</title>
+   <link href="style.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  
+<div class="app__container">
+  <div class="nav__container">
+    <div class="nav__left">
+      <div class="nav__logo">
+      <svg class="open__icon"  onclick="resMenu()" width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd"/></svg>
+      <h2>sneakers</h2>
+    </div>
+    <div class="nav__option "> 
+<ul> 
+      <li ><svg  onclick="resMenu()" width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg></li>
+      <li>Collections</li> 
+      <li> Men</li> 
+      <li>Women</li> 
+      <li>About</li>
+      <li>Contact</li>
+</ul>
+</div>
+</div>
+<div class="nav__right">
+  <svg class="cart__display" width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+  <img class="avatar" src="image-avatar.png" />
+  <div class="basket">
+  <div class="basket__title">
+    <h3>Cart</h3>
+  </div>
+  <div class="basket__item">
+    <div>
+    <img src="image-product-1-thumbnail.jpg">
+  </div>
+    <div>
+    <p>Fall Limited edition Sneakers</p>
+    <p>$125.00 X3 <b>375.00</b></p>
+  </div>
+    
+  </div>
+  <div class="checkout__btn">
+    <button>Check out</button>
+  </div>
+</div>
+</div>
+  </div>  
+  <div class="product__container">
+    <div class="product__img">
+      <div class="product__fullview">
+        <img src="image-product-1.jpg"/>
+        <img src="image-product-2.jpg"/>
+        <img src="image-product-3.jpg"/>
+        <img src="image-product-4.jpg"/>
+        
+      <div class="pluse">
+        <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+      </div>
+      <div class="minuse">
+        <svg  width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+      </div>
+  
+      </div>
+      <div class="product__thumbnail">
+        <img  data-slide=0 src="image-product-1-thumbnail.jpg"/>
+        <img  data-slide=1 src="image-product-2-thumbnail.jpg"/>
+        <img  data-slide=2 src="image-product-3-thumbnail.jpg"/>
+        <img  data-slide=3 src="image-product-4-thumbnail.jpg"/>
+      </div>
+
+    </div>
+<div class="info__container" >
+  <div class="product__info">
+  <h5>Sneaker Company</h5>
+  <h1>Fall Limited Edition Sneakers</h1>
+
+ <p class="p"> These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+<div class="price__container">
+ <div class="offer">
+<h2>$125.00</h2>
+<div class="pct__container">
+ <p >50%</p> 
+</div>
+</div>
+<p class="product__price">$250.00</p>
+</div>
+  
+
+<div class="add__cart">
+  <div class="btn__1">
+  <button class="pluse__btn" onclick="Count(1)">+</button>
+ <p class="item__count">0</p>
+  <button class="minuse__btn" onclick="Count(-1)">-</button>
+</div>
+ <button onclick="Count(0)" class="cart__btn"><svg  width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg> <p>Add to cart</p></button> 
+</div>
+</div>
+</div>
+</div>
+<script src="app.js"></script>
+<script src="count.js"></script>
+</body>
+</html>
